@@ -19,9 +19,13 @@ namespace Bank.Module
         }
         public override void PrintInfo()
         {
-            Console.WriteLine("Название: ",Name);
-            Console.WriteLine("Номер счета: ",AccountNUM);
-            Console.WriteLine("Сумма на счету: ",SumOnTheAccount);
+            Console.WriteLine("______________");
+            Console.WriteLine("Название: "+Name);
+            Console.WriteLine("Дата открытия счета: "+DateOfStart);
+            Console.WriteLine("Адрес: "+address);
+            Console.WriteLine("Номер счета: "+AccountNUM);
+            Console.WriteLine("Сумма на счету: "+SumOnTheAccount);
+            Console.WriteLine("______________");
         }
     }
 }

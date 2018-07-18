@@ -21,9 +21,15 @@ namespace Bank.Module
 
         public override void PrintInfo()
         {
-            Console.WriteLine("Размер кредита: ",SizeOfCredit);
-            Console.WriteLine("Процент кредита: ",PercentOfCredit);
-            Console.WriteLine("Остаток кредита: ",RemainOfCredit);
+            Console.WriteLine("______________");
+            Console.WriteLine("Ф.И.О.: "+FIO);
+            Console.WriteLine("Возраст: "+Age);
+            Console.WriteLine("Адрес: " + address);
+            Console.WriteLine("Дата кредита: "+DateOfStart);
+            Console.WriteLine("Размер кредита: "+SizeOfCredit);
+            Console.WriteLine("Процент кредита: "+PercentOfCredit+"%");
+            Console.WriteLine("Остаток кредита: "+RemainOfCredit);
+            Console.WriteLine("______________");
         }
     }
 }

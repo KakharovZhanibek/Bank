@@ -8,16 +8,12 @@ namespace Bank.Module
 {
     public abstract class Client
     {
+        public int S { get; set; }
         public string FIO { get; set; }
         public int Age { get; set; }
         public string address { get; set; }
         public DateTime DateOfStart { get; set; }
-        
-        public virtual void PrintInfo()
-        {
-            Console.WriteLine("Ф.И.О.: ",FIO);
-            Console.WriteLine("Адрес: ",address);
-            Console.WriteLine("Дата начала: ",DateOfStart);
-        }
+
+        public abstract void PrintInfo();
     }
 }
